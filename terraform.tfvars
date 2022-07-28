@@ -16,4 +16,4 @@ windows_sql_instance_type = "n2-standard-2"
 #bucket
 bucket_name = "my-bucket-tf"
 
-
+dns_address = "private.example.com"

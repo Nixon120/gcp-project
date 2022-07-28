@@ -1,7 +1,7 @@
 # allow rdp
 resource "google_compute_firewall" "allow-rdp" {
   name    = "kopicloud-fw-allow-rdp"
-  network = google_compute_network.vpc.name
+  network = google_compute_network.vpc.id
   allow {
     protocol = "tcp"
     ports    = ["3389"]
@@ -12,7 +12,7 @@ resource "google_compute_firewall" "allow-rdp" {
 # allow sql
 resource "google_compute_firewall" "allow-sql" {
   name    = "kopicloud-fw-allow-sql"
-  network = google_compute_network.vpc.name
+  network = google_compute_network.vpc.id
   allow {
     protocol = "tcp"
     ports    = ["1433"]
