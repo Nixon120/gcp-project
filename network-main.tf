@@ -16,9 +16,6 @@ resource "google_dns_managed_zone" "private-zone" {
   name        = "private-zone"
   dns_name    = var.dns_address
   description = "kopicloud private DNS zone"
-  labels = {
-    description = "DNS zone"
-  }
 
   visibility = "private"
 
